@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c3a0e917-ecb3-4cc8-b356-5567f369ff18" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/SameGame.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/xcode.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame.xcodeproj/project.xcworkspace/xcuserdata/joel.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame.xcodeproj/xcuserdata/joel.xcuserdatad/xcschemes/SameGame.xcscheme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/background.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/background.imageset/background@2x.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballBlue.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballBlue.imageset/ballBlue@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballCyan.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballCyan.imageset/ballCyan@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballGreen.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballGreen.imageset/ballGreen@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballGrey.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballGrey.imageset/ballGrey@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballPurple.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballPurple.imageset/ballPurple@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballRed.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballRed.imageset/ballRed@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballYellow.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballYellow.imageset/ballYellow@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/gameOver.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/gameOver.imageset/gameOver@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/Ball.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/SameGame.entitlements" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SameGame.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SameGame.xcodeproj/xcuserdata/joel.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame.xcodeproj/xcuserdata/joel.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SameGame/Actions.sks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SameGame/GameScene.sks" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/GameScene.sks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SameGame/GameScene.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/GameScene.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SameGame/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/Info.plist" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="macos_iosmac_x86_64" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hEUd1cnlGewBUFXgNfEoxTWtOx" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="manualOrder" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="SameGame" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="SameGame" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SameGame" TARGET_NAME="SameGame" CONFIG_NAME="Debug" SCHEME_NAME="SameGame" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="SameGame" RUN_TARGET_NAME="SameGame" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+      <embedded_app_extension_list />
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c3a0e917-ecb3-4cc8-b356-5567f369ff18" name="Default Changelist" comment="" />
+      <created>1599575828813</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599575828813</updated>
+      <workItem from="1599575829846" duration="34350000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="842" height="860" key="GridCell.Tab.0.bottom" timestamp="1599678297569">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="842" height="860" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1599678297569" />
+    <state width="842" height="860" key="GridCell.Tab.0.center" timestamp="1599678297569">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="842" height="860" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1599678297569" />
+    <state width="842" height="860" key="GridCell.Tab.0.left" timestamp="1599678297569">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="842" height="860" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1599678297569" />
+    <state width="842" height="860" key="GridCell.Tab.0.right" timestamp="1599678297569">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="842" height="860" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1599678297569" />
+    <state width="1693" height="502" key="GridCell.Tab.1.bottom" timestamp="1599624786826">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1693" height="502" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1599624786826" />
+    <state width="1693" height="502" key="GridCell.Tab.1.center" timestamp="1599624786826">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1693" height="502" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1599624786826" />
+    <state width="1693" height="502" key="GridCell.Tab.1.left" timestamp="1599624786826">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1693" height="502" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1599624786826" />
+    <state width="1693" height="502" key="GridCell.Tab.1.right" timestamp="1599624786826">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="1693" height="502" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1599624786826" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1599676210639">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1599676210639" />
+    <state x="1244" y="474" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599616736850">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1244" y="474" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.2560.1417@0.23.2560.1417" timestamp="1599616736850" />
+    <state x="1357" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1599616716869">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1357" y="348" width="670" height="676" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1599616716869" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SameGame/GameScene.swift</url>
+          <line>118</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/SameGame/GameScene.swift</url>
+          <line>110</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="CidrExceptionBreakpoint" />
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="AppleRunConfiguration">
+        <watch expression="ball" language="Swift" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
