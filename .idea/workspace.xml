@@ -13,39 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3a0e917-ecb3-4cc8-b356-5567f369ff18" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SameGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/xcode.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame.xcodeproj/project.xcworkspace/xcuserdata/joel.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame.xcodeproj/xcuserdata/joel.xcuserdatad/xcschemes/SameGame.xcscheme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/background.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/background.imageset/background@2x.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballBlue.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballBlue.imageset/ballBlue@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballCyan.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballCyan.imageset/ballCyan@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballGreen.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballGreen.imageset/ballGreen@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballGrey.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballGrey.imageset/ballGrey@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballPurple.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballPurple.imageset/ballPurple@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballRed.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballRed.imageset/ballRed@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballYellow.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/ballYellow.imageset/ballYellow@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/gameOver.imageset/Contents.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Assets.xcassets/gameOver.imageset/gameOver@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/Ball.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/SameGame.entitlements" afterDir="false" />
+    <list default="true" id="c3a0e917-ecb3-4cc8-b356-5567f369ff18" name="Default Changelist" comment="feat: working initial version">
+      <change afterPath="$PROJECT_DIR$/SameGame/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SameGame.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SameGame.xcodeproj/xcuserdata/joel.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame.xcodeproj/xcuserdata/joel.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SameGame/Actions.sks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SameGame/GameScene.sks" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/GameScene.sks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SameGame/GameScene.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/GameScene.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SameGame/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/Info.plist" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,8 +67,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599575828813</updated>
-      <workItem from="1599575829846" duration="34350000" />
+      <workItem from="1599575829846" duration="34831000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: working initial version">
+      <created>1599678543176</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599678543176</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: working initial version">
+      <created>1599678552818</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599678552818</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,23 +100,31 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: working initial version" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: working initial version" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="842" height="860" key="GridCell.Tab.0.bottom" timestamp="1599678297569">
+    <state x="1568" y="635" key="Github.ShareDialog" timestamp="1599678593544">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="842" height="860" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1599678297569" />
-    <state width="842" height="860" key="GridCell.Tab.0.center" timestamp="1599678297569">
+    <state x="1568" y="635" key="Github.ShareDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1599678593544" />
+    <state width="842" height="860" key="GridCell.Tab.0.bottom" timestamp="1599678628897">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="842" height="860" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1599678297569" />
-    <state width="842" height="860" key="GridCell.Tab.0.left" timestamp="1599678297569">
+    <state width="842" height="860" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1599678628897" />
+    <state width="842" height="860" key="GridCell.Tab.0.center" timestamp="1599678628897">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="842" height="860" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1599678297569" />
-    <state width="842" height="860" key="GridCell.Tab.0.right" timestamp="1599678297569">
+    <state width="842" height="860" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1599678628897" />
+    <state width="842" height="860" key="GridCell.Tab.0.left" timestamp="1599678628897">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="842" height="860" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1599678297569" />
+    <state width="842" height="860" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1599678628897" />
+    <state width="842" height="860" key="GridCell.Tab.0.right" timestamp="1599678628897">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="842" height="860" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1599678628897" />
     <state width="1693" height="502" key="GridCell.Tab.1.bottom" timestamp="1599624786826">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>

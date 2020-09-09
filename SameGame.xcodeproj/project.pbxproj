@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		31DCA3F5E0CADE67E26C027D /* Ball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31DCA66AE9A8E7D210303DEF /* Ball.swift */; };
-		31DCA421A4E994C57A3BFA66 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 31DCAD9E1CDD3A86440DCD6E /* readme.md */; };
+		31DCA728AFCE0FE50C760D6A /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 31DCACBDA0261CB8B0D2289C /* readme.md */; };
 		5D9AF3352507CDC500EEB647 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9AF3342507CDC500EEB647 /* AppDelegate.swift */; };
 		5D9AF3372507CDC500EEB647 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D9AF3362507CDC500EEB647 /* GameScene.sks */; };
 		5D9AF33B2507CDC500EEB647 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9AF33A2507CDC500EEB647 /* GameScene.swift */; };
@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		31DCA66AE9A8E7D210303DEF /* Ball.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ball.swift; sourceTree = "<group>"; };
-		31DCAD9E1CDD3A86440DCD6E /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		31DCACBDA0261CB8B0D2289C /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		5D9AF3312507CDC500EEB647 /* SameGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SameGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D9AF3342507CDC500EEB647 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D9AF3362507CDC500EEB647 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -90,6 +90,7 @@
 				5D9AF34E2507CDC500EEB647 /* SameGameTests */,
 				5D9AF3592507CDC500EEB647 /* SameGameUITests */,
 				5D9AF3322507CDC500EEB647 /* Products */,
+				31DCACBDA0261CB8B0D2289C /* readme.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,7 +117,6 @@
 				5D9AF3432507CDC500EEB647 /* LaunchScreen.storyboard */,
 				5D9AF3462507CDC500EEB647 /* Info.plist */,
 				31DCA66AE9A8E7D210303DEF /* Ball.swift */,
-				31DCAD9E1CDD3A86440DCD6E /* readme.md */,
 			);
 			path = SameGame;
 			sourceTree = "<group>";
@@ -275,7 +275,7 @@
 				5D9AF33D2507CDC500EEB647 /* GameViewController.swift in Sources */,
 				5D9AF3352507CDC500EEB647 /* AppDelegate.swift in Sources */,
 				31DCA3F5E0CADE67E26C027D /* Ball.swift in Sources */,
-				31DCA421A4E994C57A3BFA66 /* readme.md in Sources */,
+				31DCA728AFCE0FE50C760D6A /* readme.md in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
