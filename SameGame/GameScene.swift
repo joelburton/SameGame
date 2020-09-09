@@ -1,5 +1,4 @@
 import SpriteKit
-import GameplayKit
 
 /** SameGame scene: manages UI and game logic. */
 class GameScene: SKScene {
@@ -211,6 +210,7 @@ class GameScene: SKScene {
                         if let ball = grid[y][x] { ball.setPosition(x: x, y: y) }
                         grid[y][x + 1] = nil
                     }
+                    // now, this row might be empty, so repeat checking it
                     x -= 1
                 }
             }
