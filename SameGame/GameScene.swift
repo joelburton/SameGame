@@ -63,7 +63,7 @@ class GameScene: SKScene {
         numBalls = numRows * numCols
         findClusters()
 
-        currentCluster = LinkedList<Ball>()
+        currentCluster = []
         score = 0
         gameOver = false
     }
@@ -105,7 +105,7 @@ class GameScene: SKScene {
      * Called on game start, and after any board move.
      */
     func findClusters() {
-        grid.forEach { row in row.forEach { ball in ball?.cluster = LinkedList<Ball>() } }
+        grid.forEach { row in row.forEach { ball in ball?.cluster = [] } }
 
         for y in 0..<numRows {
             for x in 0..<numCols {
@@ -164,7 +164,7 @@ class GameScene: SKScene {
             score += (50 - numBalls) * 100
         }
 
-        currentCluster = LinkedList<Ball>()
+        currentCluster = []
         shiftRemainingBalls()
         findClusters()
 

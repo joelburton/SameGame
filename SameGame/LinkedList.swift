@@ -1,7 +1,7 @@
 // Swift arrays are value types, so using a reference type to hold the clusters, since multiple
 // balls can share a cluster.
 
-class Node<T> {
+final class Node<T> {
     var item: T
     var next: Node<T>?
 
@@ -11,7 +11,7 @@ class Node<T> {
     }
 }
 
-class LinkedList<T>: Sequence {
+final class LinkedList<T>: Sequence {
     var count = 0
     var isEmpty: Bool { count == 0 }
     var head: Node<T>?
@@ -35,5 +35,14 @@ class LinkedList<T>: Sequence {
     func push(_ item: T) {
         head = Node<T>(item, next: head)
         count += 1
+    }
+}
+
+extension LinkedList: ExpressibleByArrayLiteral {
+     convenience init(arrayLiteral: Element...) {
+        self.init()
+        for element in arrayLiteral {
+            self.push(element)
+        }
     }
 }

@@ -13,7 +13,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3a0e917-ecb3-4cc8-b356-5567f369ff18" name="Default Changelist" comment="refactor: make BallNode a generic">
+    <list default="true" id="c3a0e917-ecb3-4cc8-b356-5567f369ff18" name="Default Changelist" comment="refactor: make linked list and node generic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SameGame/Ball.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/Ball.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SameGame/GameScene.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/GameScene.swift" afterDir="false" />
@@ -71,7 +71,7 @@
       <updated>1599575828813</updated>
       <workItem from="1599575829846" duration="35797000" />
       <workItem from="1599946915894" duration="7000" />
-      <workItem from="1600224771217" duration="7639000" />
+      <workItem from="1600224771217" duration="8427000" />
     </task>
     <task id="LOCAL-00001" summary="feat: working initial version">
       <created>1599678543176</created>
@@ -122,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600232885434</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactor: make linked list and node generic">
+      <created>1600233779472</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1600233779472</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,7 +154,8 @@
     <MESSAGE value="docs: add explanation of re-examine line &amp; remove needless import" />
     <MESSAGE value="refactor: switch clusters dict to a linked list" />
     <MESSAGE value="refactor: make BallNode a generic" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: make BallNode a generic" />
+    <MESSAGE value="refactor: make linked list and node generic" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: make linked list and node generic" />
   </component>
   <component name="WindowStateProjectService">
     <state x="512" y="154" key="DiffContextDialog" timestamp="1599679039831">
@@ -158,22 +166,22 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1568" y="635" key="Github.ShareDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1599678593544" />
-    <state width="1252" height="860" key="GridCell.Tab.0.bottom" timestamp="1600233534379">
+    <state width="1252" height="860" key="GridCell.Tab.0.bottom" timestamp="1600234321443">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1252" height="860" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1600233534379" />
-    <state width="1252" height="860" key="GridCell.Tab.0.center" timestamp="1600233534379">
+    <state width="1252" height="860" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1600234321443" />
+    <state width="1252" height="860" key="GridCell.Tab.0.center" timestamp="1600234321443">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1252" height="860" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1600233534379" />
-    <state width="1252" height="860" key="GridCell.Tab.0.left" timestamp="1600233534379">
+    <state width="1252" height="860" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1600234321443" />
+    <state width="1252" height="860" key="GridCell.Tab.0.left" timestamp="1600234321443">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1252" height="860" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1600233534379" />
-    <state width="1252" height="860" key="GridCell.Tab.0.right" timestamp="1600233534379">
+    <state width="1252" height="860" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1600234321443" />
+    <state width="1252" height="860" key="GridCell.Tab.0.right" timestamp="1600234321443">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1252" height="860" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1600233534379" />
+    <state width="1252" height="860" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1600234321443" />
     <state width="2518" height="502" key="GridCell.Tab.1.bottom" timestamp="1600229720691">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -194,10 +202,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1460" y="441" key="RollbackChangesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1599679041710" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1600233197348">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1600234121530">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1600233197348" />
+    <state width="500" height="445" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1600234121530" />
     <state x="1292" y="471" key="Vcs.Push.Dialog.v2" timestamp="1599679046358">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
