@@ -9,7 +9,7 @@ import SpriteKit
 class Ball: SKSpriteNode {
     var x: Int!
     var y: Int!
-    var clusterId = 0
+    var cluster = BallLinkedList()
 
     func configure(color: String, x: Int, y: Int) {
         self.name = color

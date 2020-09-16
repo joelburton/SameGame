@@ -22,10 +22,8 @@ class GameScene: SKScene {
     // that is selected now (is rotating for users). All clusters are identified after
     // any change in game grid, so that (a) selecting a new cluster happens very quickly
     // in the UI and (b) we know when the game ends (there are no more greater-than-one
-    // clusters). A currentCluster of 0 means nothing is selected.
-    var currentClusterId = 0
-    var clusters: [[Ball]] = [[]]
-
+    // clusters).
+    var currentCluster: BallLinkedList!
 
     /** Set up this scene. */
     override func didMove(to view: SKView) {
@@ -65,7 +63,7 @@ class GameScene: SKScene {
         numBalls = numRows * numCols
         findClusters()
 
-        currentClusterId = 0
+        currentCluster = BallLinkedList()
         score = 0
         gameOver = false
     }
@@ -87,7 +85,7 @@ class GameScene: SKScene {
         }
 
         guard let ball = nodes(at: location).first as? Ball else { return }
-        if !clusters[currentClusterId].contains(ball) {
+        if !currentCluster.contains(ball) {
             selectCluster(x: ball.x, y: ball.y);
         } else {
             removeCluster()
@@ -96,10 +94,10 @@ class GameScene: SKScene {
 
     /** Select cluster and spin them (deselects current cluster. */
     func selectCluster(x: Int, y: Int) {
-        clusters[currentClusterId].forEach { $0.stopSpin() }
-        currentClusterId = grid[y][x]!.clusterId
+        currentCluster.forEach { $0.stopSpin() }
+        currentCluster = grid[y][x]!.cluster
         // only groups of >1 can be removed, so don't rotate clusters w/only 1 ball
-        if clusters[currentClusterId].count > 1 { clusters[currentClusterId].forEach { $0.spin() } }
+        if currentCluster.count > 1 { currentCluster.forEach { $0.spin() } }
     }
 
     /** Find clusters (neighbors-of-same-color) on board and update clusters property.
@@ -107,48 +105,43 @@ class GameScene: SKScene {
      * Called on game start, and after any board move.
      */
     func findClusters() {
-        grid.forEach { row in row.forEach { ball in ball?.clusterId = 0 } }
-        clusters = [[]]
-
-        // "0 cluster" is "no cluster selected", so all the real clusters will get an id starting
-        // with 1. Neighboring balls with the same color share a cluster, so we graph-traverse
-        // to identify clusters.
-        var newClusterId = 1
+        grid.forEach { row in row.forEach { ball in ball?.cluster = BallLinkedList() } }
 
         for y in 0..<numRows {
             for x in 0..<numCols {
                 guard let ball = grid[y][x] else { continue }
                 // if a ball already has a cluster, it's already fulled accounted for
-                guard ball.clusterId == 0 else { continue }
-
-                ball.clusterId = newClusterId
-                clusters.append([])
-                newClusterId += 1
+                guard ball.cluster.isEmpty else { continue }
 
                 // DFS: recursively explore neighbors, starting here
                 var toVisit = [ball]
                 while toVisit.count > 0 {
+                    print("to visit \(ball.x) \(ball.y)")
                     let visiting = toVisit.removeLast()
 
                     if visiting.name == ball.name {
-                        visiting.clusterId = ball.clusterId
-                        clusters[ball.clusterId].append(visiting)
+                        visiting.cluster = ball.cluster
+                        ball.cluster.push(visiting)
 
                         if visiting.y > 0 {
-                            let neighbor = grid[visiting.y - 1][visiting.x]
-                            if neighbor?.clusterId == 0 { toVisit.append(neighbor!) }
+                            if let neighbor = grid[visiting.y - 1][visiting.x] {
+                                if neighbor.cluster.isEmpty { toVisit.append(neighbor) }
+                            }
                         }
                         if visiting.y < numRows - 1 {
-                            let neighbor = grid[visiting.y + 1][visiting.x]
-                            if neighbor?.clusterId == 0 { toVisit.append(neighbor!) }
+                            if let neighbor = grid[visiting.y + 1][visiting.x] {
+                                if neighbor.cluster.isEmpty { toVisit.append(neighbor) }
+                            }
                         }
                         if visiting.x > 0 {
-                            let neighbor = grid[visiting.y][visiting.x - 1]
-                            if neighbor?.clusterId == 0 { toVisit.append(neighbor!) }
+                            if let neighbor = grid[visiting.y][visiting.x - 1] {
+                                if neighbor.cluster.isEmpty { toVisit.append(neighbor) }
+                            }
                         }
                         if visiting.x < numCols - 1 {
-                            let neighbor = grid[visiting.y][visiting.x + 1]
-                            if neighbor?.clusterId == 0 { toVisit.append(neighbor!) }
+                            if let neighbor = grid[visiting.y][visiting.x + 1] {
+                                if neighbor.cluster.isEmpty { toVisit.append(neighbor) }
+                            }
                         }
                     }
                 }
@@ -158,7 +151,8 @@ class GameScene: SKScene {
 
     /** Remove currently-selected cluster from board. */
     func removeCluster() {
-        let currentCluster = clusters[currentClusterId]
+        guard currentCluster.count > 1 else { return }
+
         for ball in currentCluster {
             ball.removeFromParent()
             grid[ball.y][ball.x] = nil
@@ -170,11 +164,18 @@ class GameScene: SKScene {
             score += (50 - numBalls) * 100
         }
 
-        currentClusterId = 0
+        currentCluster = BallLinkedList()
         shiftRemainingBalls()
         findClusters()
 
-        if clusters.allSatisfy({ cluster in cluster.count < 2 }) {
+
+        let allSoloClusters = grid.allSatisfy { row in
+            row.allSatisfy { ball in
+                ball == nil || ball!.cluster.count < 2
+            }
+        }
+
+        if allSoloClusters {
             gameOver = true
             gameOverMsg = SKSpriteNode(imageNamed: "gameOver")
             gameOverMsg.position = CGPoint(x: 512, y: 384)
@@ -219,15 +220,11 @@ class GameScene: SKScene {
 
     // debugging cluster creation & grid state:
     func dump() {
-        print("\nclusterId count [ball:(color, x, y), ...]")
-        for (id, cluster) in clusters.enumerated() {
-            print(id, cluster.count, cluster.map { ($0.name!, $0.x!, $0.y! )})
-        }
         print("\ngridX=ballX gridY=ballY name clusterId")
         for y in 0..<numRows {
             for x in 0..<numCols {
                 if let b = grid[y][x] {
-                    print("\(x)=\(b.x!), \(y)=\(b.y!) \(b.name!) \(b.clusterId)")
+                    print("\(x)=\(b.x!), \(y)=\(b.y!) \(b.name!) \(b.cluster)")
                 } else {
                     print(x, y, "-")
                 }
