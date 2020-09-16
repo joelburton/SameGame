@@ -11,11 +11,18 @@ final class Node<T> {
     }
 }
 
-final class LinkedList<T>: Sequence {
+final class LinkedList<T> {
     var count = 0
     var isEmpty: Bool { count == 0 }
     var head: Node<T>?
 
+    func push(_ item: T) {
+        head = Node<T>(item, next: head)
+        count += 1
+    }
+}
+
+extension LinkedList: Sequence {
     struct LinkedListIterator: IteratorProtocol {
         var nextNode: Node<T>?
 
@@ -30,11 +37,6 @@ final class LinkedList<T>: Sequence {
 
     func makeIterator() -> LinkedListIterator {
         LinkedListIterator(nextNode: self.head)
-    }
-
-    func push(_ item: T) {
-        head = Node<T>(item, next: head)
-        count += 1
     }
 }
 
