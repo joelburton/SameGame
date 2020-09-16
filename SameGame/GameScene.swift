@@ -23,7 +23,7 @@ class GameScene: SKScene {
     // any change in game grid, so that (a) selecting a new cluster happens very quickly
     // in the UI and (b) we know when the game ends (there are no more greater-than-one
     // clusters).
-    var currentCluster: BallLinkedList!
+    var currentCluster: LinkedList<Ball>!
 
     /** Set up this scene. */
     override func didMove(to view: SKView) {
@@ -63,7 +63,7 @@ class GameScene: SKScene {
         numBalls = numRows * numCols
         findClusters()
 
-        currentCluster = BallLinkedList()
+        currentCluster = LinkedList<Ball>()
         score = 0
         gameOver = false
     }
@@ -105,7 +105,7 @@ class GameScene: SKScene {
      * Called on game start, and after any board move.
      */
     func findClusters() {
-        grid.forEach { row in row.forEach { ball in ball?.cluster = BallLinkedList() } }
+        grid.forEach { row in row.forEach { ball in ball?.cluster = LinkedList<Ball>() } }
 
         for y in 0..<numRows {
             for x in 0..<numCols {
@@ -164,7 +164,7 @@ class GameScene: SKScene {
             score += (50 - numBalls) * 100
         }
 
-        currentCluster = BallLinkedList()
+        currentCluster = LinkedList<Ball>()
         shiftRemainingBalls()
         findClusters()
 

@@ -1,44 +1,39 @@
 // Swift arrays are value types, so using a reference type to hold the clusters, since multiple
 // balls can share a cluster.
 
-class BallNode {
-    var ball: Ball
-    var next: BallNode?
+class Node<T> {
+    var item: T
+    var next: Node<T>?
 
-    init(ball: Ball, next: BallNode? = nil) {
-        self.ball = ball
+    init(_ item: T, next: Node? = nil) {
+        self.item = item
         self.next = next
     }
 }
 
-class BallLinkedList: Sequence {
+class LinkedList<T>: Sequence {
     var count = 0
     var isEmpty: Bool { count == 0 }
-    var head: BallNode?
+    var head: Node<T>?
 
-    struct BallLinkedListIterator: IteratorProtocol {
-        var nextNode: BallNode?
+    struct LinkedListIterator: IteratorProtocol {
+        var nextNode: Node<T>?
 
-        init(_ ll: BallLinkedList) {
-            self.nextNode = ll.head
-        }
+        mutating func next() -> T? {
+            guard let next = nextNode else { return nil }
 
-        mutating func next() -> Ball? {
-            if nextNode == nil { return nil }
-
-            let nextBall = nextNode!.ball
-            self.nextNode = nextNode!.next
-            return nextBall
+            let nextItem = next.item
+            self.nextNode = next.next
+            return nextItem
         }
     }
 
-    func makeIterator() -> BallLinkedListIterator {
-        BallLinkedListIterator(self)
+    func makeIterator() -> LinkedListIterator {
+        LinkedListIterator(nextNode: self.head)
     }
 
-    func push(_ ball: Ball) {
-        head = BallNode(ball: ball, next: head)
+    func push(_ item: T) {
+        head = Node<T>(item, next: head)
         count += 1
     }
 }
-

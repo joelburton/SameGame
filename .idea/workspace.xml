@@ -13,12 +13,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3a0e917-ecb3-4cc8-b356-5567f369ff18" name="Default Changelist" comment="docs: add explanation of re-examine line &amp; remove needless import">
-      <change afterPath="$PROJECT_DIR$/SameGame/LinkedList.swift" afterDir="false" />
+    <list default="true" id="c3a0e917-ecb3-4cc8-b356-5567f369ff18" name="Default Changelist" comment="refactor: make BallNode a generic">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SameGame.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame.xcodeproj/project.pbxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SameGame/Ball.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/Ball.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SameGame/GameScene.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/GameScene.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SameGame/LinkedList.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/LinkedList.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +71,7 @@
       <updated>1599575828813</updated>
       <workItem from="1599575829846" duration="35797000" />
       <workItem from="1599946915894" duration="7000" />
-      <workItem from="1600224771217" duration="6683000" />
+      <workItem from="1600224771217" duration="7639000" />
     </task>
     <task id="LOCAL-00001" summary="feat: working initial version">
       <created>1599678543176</created>
@@ -109,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599679020692</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor: switch clusters dict to a linked list">
+      <created>1600232598879</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600232598879</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor: make BallNode a generic">
+      <created>1600232885434</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600232885434</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +145,9 @@
     <MESSAGE value="docs: add readme.md" />
     <MESSAGE value="chore: move readme.md to top folder, so more easily found at github" />
     <MESSAGE value="docs: add explanation of re-examine line &amp; remove needless import" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: add explanation of re-examine line &amp; remove needless import" />
+    <MESSAGE value="refactor: switch clusters dict to a linked list" />
+    <MESSAGE value="refactor: make BallNode a generic" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: make BallNode a generic" />
   </component>
   <component name="WindowStateProjectService">
     <state x="512" y="154" key="DiffContextDialog" timestamp="1599679039831">
@@ -143,22 +158,22 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1568" y="635" key="Github.ShareDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1599678593544" />
-    <state width="1252" height="860" key="GridCell.Tab.0.bottom" timestamp="1600232272222">
+    <state width="1252" height="860" key="GridCell.Tab.0.bottom" timestamp="1600233534379">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1252" height="860" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1600232272222" />
-    <state width="1252" height="860" key="GridCell.Tab.0.center" timestamp="1600232272222">
+    <state width="1252" height="860" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1600233534379" />
+    <state width="1252" height="860" key="GridCell.Tab.0.center" timestamp="1600233534379">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1252" height="860" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1600232272222" />
-    <state width="1252" height="860" key="GridCell.Tab.0.left" timestamp="1600232272222">
+    <state width="1252" height="860" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1600233534379" />
+    <state width="1252" height="860" key="GridCell.Tab.0.left" timestamp="1600233534379">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1252" height="860" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1600232272222" />
-    <state width="1252" height="860" key="GridCell.Tab.0.right" timestamp="1600232272222">
+    <state width="1252" height="860" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1600233534379" />
+    <state width="1252" height="860" key="GridCell.Tab.0.right" timestamp="1600233534379">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1252" height="860" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1600232272222" />
+    <state width="1252" height="860" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1600233534379" />
     <state width="2518" height="502" key="GridCell.Tab.1.bottom" timestamp="1600229720691">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -179,10 +194,10 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1460" y="441" key="RollbackChangesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1599679041710" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1600232506191">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1600233197348">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1600232506191" />
+    <state width="500" height="445" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1600233197348" />
     <state x="1292" y="471" key="Vcs.Push.Dialog.v2" timestamp="1599679046358">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
