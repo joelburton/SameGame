@@ -13,17 +13,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3a0e917-ecb3-4cc8-b356-5567f369ff18" name="Default Changelist" comment="refactor: break protocol conformance to extensions for clarity">
-      <change afterPath="$PROJECT_DIR$/SameGame/BoxedArray.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SameGame/OptionalMatrix.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="c3a0e917-ecb3-4cc8-b356-5567f369ff18" name="Default Changelist" comment="refactor: make far more functional &amp; runtime scalable&#10;&#10;- use .removeAll to compress rows in O(n) rather than my O(n^2) alg&#10;  (also makes code much clearer)&#10;&#10;- use filter to compress cols in O(n) rather than my O(n^2) alg&#10;  (also makes code much clearer)&#10;&#10;- factor matrix work out to uncoupled-to-UI OptionalMatrix class &#10;&#10;- added better documentation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SameGame.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SameGame.xcodeproj/xcuserdata/joel.xcuserdatad/xcschemes/SameGame.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame.xcodeproj/xcuserdata/joel.xcuserdatad/xcschemes/SameGame.xcscheme" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SameGame/Ball.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/Ball.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SameGame/GameScene.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/GameScene.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SameGame/GameViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/GameViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SameGame/LinkedList.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/LinkedList.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +72,7 @@
       <workItem from="1599946915894" duration="7000" />
       <workItem from="1600224771217" duration="11911000" />
       <workItem from="1600263374996" duration="3951000" />
-      <workItem from="1600533383889" duration="23103000" />
+      <workItem from="1600533383889" duration="24644000" />
     </task>
     <task id="LOCAL-00001" summary="feat: working initial version">
       <created>1599678543176</created>
@@ -152,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600234650910</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="refactor: make far more functional &amp; runtime scalable&#10;&#10;- use .removeAll to compress rows in O(n) rather than my O(n^2) alg&#10;  (also makes code much clearer)&#10;&#10;- use filter to compress cols in O(n) rather than my O(n^2) alg&#10;  (also makes code much clearer)&#10;&#10;- factor matrix work out to uncoupled-to-UI OptionalMatrix class &#10;&#10;- added better documentation">
+      <created>1600566787019</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1600566787019</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +179,8 @@
     <MESSAGE value="refactor: make linked list and node generic" />
     <MESSAGE value="refactor: allow array literals for making linked list" />
     <MESSAGE value="refactor: break protocol conformance to extensions for clarity" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: break protocol conformance to extensions for clarity" />
+    <MESSAGE value="refactor: make far more functional &amp; runtime scalable&#10;&#10;- use .removeAll to compress rows in O(n) rather than my O(n^2) alg&#10;  (also makes code much clearer)&#10;&#10;- use filter to compress cols in O(n) rather than my O(n^2) alg&#10;  (also makes code much clearer)&#10;&#10;- factor matrix work out to uncoupled-to-UI OptionalMatrix class &#10;&#10;- added better documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: make far more functional &amp; runtime scalable&#10;&#10;- use .removeAll to compress rows in O(n) rather than my O(n^2) alg&#10;  (also makes code much clearer)&#10;&#10;- use filter to compress cols in O(n) rather than my O(n^2) alg&#10;  (also makes code much clearer)&#10;&#10;- factor matrix work out to uncoupled-to-UI OptionalMatrix class &#10;&#10;- added better documentation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1005" y="542" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600235717675">
@@ -191,35 +191,35 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1092" y="454" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1600236259225" />
-    <state x="288" y="83" key="DiffContextDialog" timestamp="1600321874249">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="512" y="154" width="2048" height="1286" key="DiffContextDialog" timestamp="1600567028259">
+      <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="288" y="83" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1600321874249" />
-    <state x="512" y="154" key="DiffContextDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1599679039831" />
+    <state x="512" y="154" width="2048" height="1286" key="DiffContextDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1600567028259" />
     <state x="1568" y="635" key="Github.ShareDialog" timestamp="1599678593544">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1568" y="635" key="Github.ShareDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1599678593544" />
-    <state width="637" height="416" key="GridCell.Tab.0.bottom" timestamp="1600565923875">
+    <state width="637" height="416" key="GridCell.Tab.0.bottom" timestamp="1600567319192">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600356386636" />
-    <state width="637" height="416" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1600565923875" />
-    <state width="637" height="416" key="GridCell.Tab.0.center" timestamp="1600565923875">
+    <state width="637" height="416" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1600567319192" />
+    <state width="637" height="416" key="GridCell.Tab.0.center" timestamp="1600567319192">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600356386635" />
-    <state width="637" height="416" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1600565923875" />
-    <state width="637" height="416" key="GridCell.Tab.0.left" timestamp="1600565923874">
+    <state width="637" height="416" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1600567319192" />
+    <state width="637" height="416" key="GridCell.Tab.0.left" timestamp="1600567319192">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600356386635" />
-    <state width="637" height="416" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1600565923874" />
-    <state width="637" height="416" key="GridCell.Tab.0.right" timestamp="1600565923875">
+    <state width="637" height="416" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1600567319192" />
+    <state width="637" height="416" key="GridCell.Tab.0.right" timestamp="1600567319192">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600356386636" />
-    <state width="637" height="416" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1600565923875" />
+    <state width="637" height="416" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1600567319192" />
     <state width="2518" height="502" key="GridCell.Tab.1.bottom" timestamp="1600538018890">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
@@ -251,10 +251,10 @@
     </state>
     <state width="500" height="400" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1600328926737" />
     <state width="500" height="445" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1600565997051" />
-    <state x="1292" y="471" key="Vcs.Push.Dialog.v2" timestamp="1600234661117">
+    <state x="1292" y="471" key="Vcs.Push.Dialog.v2" timestamp="1600566789160">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="1292" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1600234661117" />
+    <state x="1292" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1600566789160" />
     <state x="1244" y="474" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600226857573">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
