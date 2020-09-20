@@ -28,10 +28,8 @@ extension LinkedList: Sequence {
 
         mutating func next() -> T? {
             guard let next = nextNode else { return nil }
-
-            let nextItem = next.item
-            self.nextNode = next.next
-            return nextItem
+            defer { self.nextNode = next.next }
+            return next.item
         }
     }
 
@@ -41,10 +39,8 @@ extension LinkedList: Sequence {
 }
 
 extension LinkedList: ExpressibleByArrayLiteral {
-     convenience init(arrayLiteral: Element...) {
+    convenience init(arrayLiteral: Element...) {
         self.init()
-        for element in arrayLiteral {
-            self.push(element)
-        }
+        for element in arrayLiteral { self.push(element) }
     }
 }

@@ -13,10 +13,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3a0e917-ecb3-4cc8-b356-5567f369ff18" name="Default Changelist" comment="refactor: make linked list and node generic">
+    <list default="true" id="c3a0e917-ecb3-4cc8-b356-5567f369ff18" name="Default Changelist" comment="refactor: break protocol conformance to extensions for clarity">
+      <change afterPath="$PROJECT_DIR$/SameGame/BoxedArray.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SameGame/OptionalMatrix.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SameGame.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SameGame.xcodeproj/xcuserdata/joel.xcuserdatad/xcschemes/SameGame.xcscheme" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame.xcodeproj/xcuserdata/joel.xcuserdatad/xcschemes/SameGame.xcscheme" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SameGame/Ball.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/Ball.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SameGame/GameScene.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/GameScene.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SameGame/GameViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/GameViewController.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SameGame/LinkedList.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SameGame/LinkedList.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +45,8 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="SameGame" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SameGame.xcodeproj" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,6 +55,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration name="SameGame" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SameGame" TARGET_NAME="SameGame" CONFIG_NAME="Debug" SCHEME_NAME="SameGame" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="SameGame" RUN_TARGET_NAME="SameGame" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
@@ -71,7 +78,9 @@
       <updated>1599575828813</updated>
       <workItem from="1599575829846" duration="35797000" />
       <workItem from="1599946915894" duration="7000" />
-      <workItem from="1600224771217" duration="8427000" />
+      <workItem from="1600224771217" duration="11911000" />
+      <workItem from="1600263374996" duration="3951000" />
+      <workItem from="1600533383889" duration="23103000" />
     </task>
     <task id="LOCAL-00001" summary="feat: working initial version">
       <created>1599678543176</created>
@@ -129,7 +138,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600233779472</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="refactor: allow array literals for making linked list">
+      <created>1600234363500</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1600234363500</updated>
+    </task>
+    <task id="LOCAL-00010" summary="refactor: break protocol conformance to extensions for clarity">
+      <created>1600234650910</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1600234650910</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,89 +178,99 @@
     <MESSAGE value="refactor: switch clusters dict to a linked list" />
     <MESSAGE value="refactor: make BallNode a generic" />
     <MESSAGE value="refactor: make linked list and node generic" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: make linked list and node generic" />
+    <MESSAGE value="refactor: allow array literals for making linked list" />
+    <MESSAGE value="refactor: break protocol conformance to extensions for clarity" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: break protocol conformance to extensions for clarity" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="512" y="154" key="DiffContextDialog" timestamp="1599679039831">
+    <state x="1005" y="542" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600235717675">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
+    <state x="1005" y="542" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1600235717675" />
+    <state x="1092" y="454" key="#com.intellij.ide.util.MemberChooser" timestamp="1600236259225">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1092" y="454" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1417@0.23.2560.1417" timestamp="1600236259225" />
+    <state x="288" y="83" key="DiffContextDialog" timestamp="1600321874249">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="288" y="83" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1600321874249" />
     <state x="512" y="154" key="DiffContextDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1599679039831" />
     <state x="1568" y="635" key="Github.ShareDialog" timestamp="1599678593544">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1568" y="635" key="Github.ShareDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1599678593544" />
-    <state width="1252" height="860" key="GridCell.Tab.0.bottom" timestamp="1600234321443">
+    <state width="637" height="416" key="GridCell.Tab.0.bottom" timestamp="1600565923875">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1252" height="860" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1600234321443" />
-    <state width="1252" height="860" key="GridCell.Tab.0.center" timestamp="1600234321443">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1600356386636" />
+    <state width="637" height="416" key="GridCell.Tab.0.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1600565923875" />
+    <state width="637" height="416" key="GridCell.Tab.0.center" timestamp="1600565923875">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1252" height="860" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1600234321443" />
-    <state width="1252" height="860" key="GridCell.Tab.0.left" timestamp="1600234321443">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1600356386635" />
+    <state width="637" height="416" key="GridCell.Tab.0.center/0.23.2560.1417@0.23.2560.1417" timestamp="1600565923875" />
+    <state width="637" height="416" key="GridCell.Tab.0.left" timestamp="1600565923874">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1252" height="860" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1600234321443" />
-    <state width="1252" height="860" key="GridCell.Tab.0.right" timestamp="1600234321443">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1600356386635" />
+    <state width="637" height="416" key="GridCell.Tab.0.left/0.23.2560.1417@0.23.2560.1417" timestamp="1600565923874" />
+    <state width="637" height="416" key="GridCell.Tab.0.right" timestamp="1600565923875">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="1252" height="860" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1600234321443" />
-    <state width="2518" height="502" key="GridCell.Tab.1.bottom" timestamp="1600229720691">
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1600356386636" />
+    <state width="637" height="416" key="GridCell.Tab.0.right/0.23.2560.1417@0.23.2560.1417" timestamp="1600565923875" />
+    <state width="2518" height="502" key="GridCell.Tab.1.bottom" timestamp="1600538018890">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1600229720691" />
-    <state width="2518" height="502" key="GridCell.Tab.1.center" timestamp="1600229720691">
+    <state width="2518" height="502" key="GridCell.Tab.1.bottom/0.23.2560.1417@0.23.2560.1417" timestamp="1600538018890" />
+    <state width="2518" height="502" key="GridCell.Tab.1.center" timestamp="1600538018890">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1600229720691" />
-    <state width="2518" height="502" key="GridCell.Tab.1.left" timestamp="1600229720691">
+    <state width="2518" height="502" key="GridCell.Tab.1.center/0.23.2560.1417@0.23.2560.1417" timestamp="1600538018890" />
+    <state width="2518" height="502" key="GridCell.Tab.1.left" timestamp="1600538018890">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1600229720691" />
-    <state width="2518" height="502" key="GridCell.Tab.1.right" timestamp="1600229720691">
+    <state width="2518" height="502" key="GridCell.Tab.1.left/0.23.2560.1417@0.23.2560.1417" timestamp="1600538018890" />
+    <state width="2518" height="502" key="GridCell.Tab.1.right" timestamp="1600538018890">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="2518" height="502" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1600229720691" />
-    <state x="1460" y="441" key="RollbackChangesDialog" timestamp="1599679041710">
-      <screen x="0" y="23" width="2560" height="1417" />
+    <state width="2518" height="502" key="GridCell.Tab.1.right/0.23.2560.1417@0.23.2560.1417" timestamp="1600538018890" />
+    <state x="475" y="118" key="RollbackChangesDialog" timestamp="1600321894682">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="475" y="118" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1600321894682" />
     <state x="1460" y="441" key="RollbackChangesDialog/0.23.2560.1417@0.23.2560.1417" timestamp="1599679041710" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1600234121530">
+    <state x="101" y="178" width="1339" height="722" key="SettingsEditor" timestamp="1600328962481">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="101" y="178" width="1339" height="722" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1600328962481" />
+    <state x="789" y="370" key="SettingsEditor/0.23.2560.1417@0.23.2560.1417" timestamp="1600234636664" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1600565997051">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1600234121530" />
-    <state x="1292" y="471" key="Vcs.Push.Dialog.v2" timestamp="1599679046358">
+    <state width="500" height="400" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1600328926737" />
+    <state width="500" height="445" key="SwitcherDM/0.23.2560.1417@0.23.2560.1417" timestamp="1600565997051" />
+    <state x="1292" y="471" key="Vcs.Push.Dialog.v2" timestamp="1600234661117">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="1292" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1599679046358" />
+    <state x="1292" y="471" key="Vcs.Push.Dialog.v2/0.23.2560.1417@0.23.2560.1417" timestamp="1600234661117" />
     <state x="1244" y="474" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1600226857573">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state x="1244" y="474" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.2560.1417@0.23.2560.1417" timestamp="1600226857573" />
-    <state x="1357" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1599616716869">
+    <state width="600" height="424" key="javadoc.popup" timestamp="1600323227156">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="600" height="424" key="javadoc.popup/0.0.1440.900@0.0.1440.900" timestamp="1600323227156" />
+    <state x="1357" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1600540159629">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="1357" y="348" width="670" height="676" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1599616716869" />
+    <state x="763" y="206" width="670" height="430" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1600323217039" />
+    <state x="1357" y="348" width="670" height="676" key="search.everywhere.popup/0.23.2560.1417@0.23.2560.1417" timestamp="1600540159629" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/SameGame/GameScene.swift</url>
-          <line>109</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/SameGame/GameScene.swift</url>
-          <line>107</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/SameGame/GameScene.swift</url>
-          <line>111</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" log-stack="true" type="CidrExceptionBreakpoint">
           <properties caught="ANY_EXCEPTION">
