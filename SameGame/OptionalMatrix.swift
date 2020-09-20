@@ -16,7 +16,7 @@ class OptionalMatrix<T> {
 
     /** Make matrix, using body function to determine value of each cell. */
     init(numCols: Int, numRows: Int, body: (_ x: Int, _ y: Int) -> T) {
-        precondition(numCols > 0 && numRows > 0)
+        precondition(numCols > 0 && numRows > 0, "Matrix cannot have 0 length or height")
         grid = (0..<numCols).map { x in (0..<numRows).map { y in body(x, y) } }
     }
 
@@ -35,17 +35,19 @@ class OptionalMatrix<T> {
         grid.allSatisfy { col in col.allSatisfy(predicate) }
     }
 
+    /** Grow a column at the end (by adding nil cells) */
+    func growColWithNils(atX: Int, to: Int) {
+        grid[atX] += Array(repeating: nil, count: to - grid[atX].count)
+    }
+
     /** Compact non-nil cells downward; do same for left moving of all-nil cols. */
     func compactDownAndLeft() {
-        let newColHeights = grid.map { col in col.filter({ $0 != nil}).count }
-        let newMaxColHeight = newColHeights.max()!
-        for x in self.indicesX {
-            grid[x].removeAll { $0 == nil }
-            (0..<newMaxColHeight - grid[x].count).forEach { _ in grid[x].append(nil) }
-        }
+        grid = grid.map { col in col.filter { $0 != nil } }
+        // equalize height of cols in matrix to height of highest col
+        let newMaxColHeight = grid.max { $1.count > $0.count }!.count
+        self.indicesX.forEach { x in growColWithNils(atX: x, to: newMaxColHeight) }
 
         // when all cells in column are nil, shift col left (shortens matrix width)
         grid = grid.filter { col in col.contains { ball in ball != nil } }
     }
 }
-
